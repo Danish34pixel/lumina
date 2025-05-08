@@ -46,7 +46,7 @@ const ShinyText = ({ text, disabled = false, speed = 5, className = "" }) => {
 
   return (
     <div
-      className={`text-[#b5b5b5a4] overflow-x-hidden bg-clip-text inline-block ${
+      className={`text-[#b5b5b5a4] over bg-clip-text inline-block ${
         disabled ? "" : "animate-shine"
       } ${className}`}
       style={{
@@ -134,7 +134,7 @@ export default function Spacepage() {
         containerRef.current = el;
         sectionRef.current = el;
       }}
-      className="h-[300vh] relative bg-gray-800 overflow-x-hidden" // Added overflow-x-hidden here
+      className="h-[300vh] relative bg-gray-800" // Standard solid background color
       style={{ width }} // Apply dynamic width
     >
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
@@ -151,7 +151,7 @@ export default function Spacepage() {
 
         {/* Main container with pop-up animation */}
         <motion.div
-          className="w-full flex items-center justify-center origin-center overflow-x-hidden" // Added overflow-x-hidden here
+          className="w-full flex items-center justify-center origin-center"
           style={{
             scale: containerScale,
             opacity: containerOpacity,

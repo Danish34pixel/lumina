@@ -228,25 +228,6 @@ export default function SunScene() {
         backgroundColor: "white", // Add a background color to the container
         boxShadow: "0 4px 20px rgba(255, 165, 0, 0.7)", // Increase the shadow size and blur
       }}
-    >
-      <motion.h1
-        initial={{ opacity: 0, scale: 1.2, rotate: 12, y: -50 }}
-        animate={{
-          opacity: 1,
-          scale: 1,
-          rotate: 12,
-          y: [0, -20, 0, -10, 0], // bounce path
-        }}
-        transition={{
-          duration: 3,
-          ease: "easeInOut",
-          times: [0, 0.3, 0.6, 0.85, 1],
-        }}
-        className="absolute z-[50] text-9xl text-white left-[30vh] top-[40vh] fire-burn"
-        style={{ overflowX: "hidden" }} // Applying overflow-x-hidden
-      >
-        Design . Your . Story
-      </motion.h1>
-    </div>
+    ></div>
   );
 }
