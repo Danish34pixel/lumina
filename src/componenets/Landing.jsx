@@ -148,7 +148,7 @@ const Landing = () => {
           width: "100%",
           height: "100vh",
           position: "relative",
-          overflow: "hidden",
+          overflowX: "hidden", // Added overflow-x-hidden here
         }}
       >
         <img

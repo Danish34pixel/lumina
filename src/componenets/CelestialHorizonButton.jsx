@@ -243,6 +243,7 @@ export default function SunScene() {
           times: [0, 0.3, 0.6, 0.85, 1],
         }}
         className="absolute z-[50] text-9xl text-white left-[30vh] top-[40vh] fire-burn"
+        style={{ overflowX: "hidden" }} // Applying overflow-x-hidden
       >
         Design . Your . Story
       </motion.h1>

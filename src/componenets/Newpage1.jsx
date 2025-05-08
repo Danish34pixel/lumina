@@ -49,10 +49,8 @@ export default function CardScrollSection() {
       const viewportHeight = window.innerHeight;
       const totalHeight = document.body.offsetHeight;
 
-      // Detect bottom of the page/section
       setShowButton(scrollY + viewportHeight < totalHeight - 100);
 
-      // Update active card
       const index = Math.min(Math.floor(scrollY / 500), cards.length - 1);
       setActiveIndex(index);
     };
@@ -63,7 +61,7 @@ export default function CardScrollSection() {
 
   return (
     <div
-      className={`relative h-[300vh] w-full transition-colors duration-700 overflow-hidden bg-gradient-to-br ${backgrounds[activeIndex]}`}
+      className={`relative h-[300vh] w-full overflow-x-hidden transition-colors duration-700 bg-gradient-to-br ${backgrounds[activeIndex]}`}
     >
       {/* Screws at corners */}
       {[

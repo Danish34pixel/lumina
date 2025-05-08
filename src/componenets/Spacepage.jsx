@@ -134,7 +134,7 @@ export default function Spacepage() {
         containerRef.current = el;
         sectionRef.current = el;
       }}
-      className="h-[300vh] relative bg-gray-800" // Standard solid background color
+      className="h-[300vh] relative bg-gray-800 overflow-x-hidden" // Added overflow-x-hidden here
       style={{ width }} // Apply dynamic width
     >
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
@@ -151,7 +151,7 @@ export default function Spacepage() {
 
         {/* Main container with pop-up animation */}
         <motion.div
-          className="w-full flex items-center justify-center origin-center"
+          className="w-full flex items-center justify-center origin-center overflow-x-hidden" // Added overflow-x-hidden here
           style={{
             scale: containerScale,
             opacity: containerOpacity,
