@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Bonheur Royale";
+  src: url("/BonheurRoyale-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spaceMono";
+  src: url("/SpaceMono-Regular.8a2aa304d0bd5e41d186.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.stars {
+  background: url("your-star-image-path.jpg") repeat;
+  background-size: 2px 2px; /* Small stars */
+  animation: twinkling 1.5s infinite ease-in-out;
+}
+
+@keyframes twinkling {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes fireBurn {
+  0% {
+    opacity: 0;
+    color: #00c6ff; /* Start with a blue color */
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #0066cc;
+    filter: blur(6px);
+    transform: scale(1.1) rotate(12deg);
+  }
+  40% {
+    opacity: 0.7;
+    color: #1e90ff; /* Lighter blue */
+    text-shadow: 0 0 15px #00c6ff, 0 0 25px #00b3ff;
+    filter: blur(3px);
+  }
+  70% {
+    opacity: 0.9;
+    color: #4682b4; /* Darker blue */
+    text-shadow: 0 0 20px #1e90ff, 0 0 30px #00c6ff;
+    filter: blur(1px);
+  }
+  100% {
+    opacity: 1;
+    color: #ffffff; /* White text at the end */
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #0066cc, 0 0 30px #1e90ff;
+    filter: blur(0);
+    transform: scale(1) rotate(12deg);
+  }
+}
+
+.fire-burn {
+  animation: fireBurn 3s ease-in-out forwards;
+}
