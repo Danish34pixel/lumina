@@ -219,6 +219,7 @@ export default function SunScene() {
 
   return (
     <div
+      className="overflow-x-hidden"
       ref={containerRef}
       style={{
         width: "100%",

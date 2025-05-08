@@ -63,7 +63,7 @@ export default function CardScrollSection() {
 
   return (
     <div
-      className={`relative h-[300vh] w-full transition-colors duration-700 bg-gradient-to-br ${backgrounds[activeIndex]}`}
+      className={`relative h-[300vh] w-full transition-colors duration-700 overflow-hidden bg-gradient-to-br ${backgrounds[activeIndex]}`}
     >
       {/* Screws at corners */}
       {[
