@@ -209,6 +209,15 @@ export default function Spacepage() {
                 </div>
               </motion.div>
             ))}
+            {/* Explore more projects button with shiny text */}
+            <button className="relative group bg-transparent border-2 border-red-500 text-white px-6 py- rounded-full overflow-hidden">
+              <ShinyText
+                text="Explore more projects"
+                speed={10}
+                className="relative z-10"
+              />
+              <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 transform scale-y-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"></span>
+            </button>
           </motion.div>
         </motion.div>
       </div>
@@ -225,16 +234,6 @@ export default function Spacepage() {
           ),
         }}
       />
-
-      {/* Explore more projects button with shiny text */}
-      <button className="mt-8 bg-transparent border-2 border-red-500 text-white px-6 py-2 rounded-full relative left-[300vh] overflow-hidden group ">
-        <ShinyText
-          text="Explore more projects"
-          speed={3}
-          className="group-hover:animate-shine"
-        />
-        <span className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
-      </button>
     </section>
   );
 }

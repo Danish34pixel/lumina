@@ -43,7 +43,7 @@ const Landing = () => {
     const geometry = new THREE.BoxGeometry(0.1, 0.8, 0.3);
 
     const baseMaterial = new THREE.MeshStandardMaterial({
-      color: new THREE.Color(1.0, 0.3, 0.6),
+      color: new THREE.Color(1.0, 1.3, 0.6),
       metalness: 0.5,
       roughness: 0.2,
       emissive: new THREE.Color(0.5, 0.05, 0.2),
