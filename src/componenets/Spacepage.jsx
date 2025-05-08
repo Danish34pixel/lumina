@@ -210,7 +210,7 @@ export default function Spacepage() {
               </motion.div>
             ))}
             {/* Explore more projects button with shiny text */}
-            <button className="relative group bg-transparent border-2 border-red-500 text-white px-6 py- rounded-full overflow-hidden">
+            <button className="relative top-[30vh] h-[10vh] w-[30vh] group bg-transparent border-2 border-red-500 text-white px-6 py-2 rounded-full overflow-hidden">
               <ShinyText
                 text="Explore more projects"
                 speed={10}
